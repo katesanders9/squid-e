@@ -12,8 +12,8 @@ dai
 │   │   
 |   └───data
 |   |   |   dataset.csv            # Video IDs, frame numbers, ground truth labels
-|   |   |   huj_annotations.csv    # Task variant, event prompt, video ID, frame number, human judgments
 |   |   |   datasheet.pdf          # Dataset documentation
+|   |   |   huj_annotations.csv    # Task variant, event prompt, video ID, frame number, human judgments
 |   |
 |   └───data_scripts
 |       |   extract_images.py      # Script to extract dataset images from downloaded videos
@@ -54,9 +54,9 @@ Note: Some of the augmentation filters used for this experiment require PyTorch 
 ### Section 5.2
 Experiments were run using the respective codebases for the three situation recognition models that were evaluated. Their GitHub repositories are listed here:
 
-- **Grounded Situation Recognition** [code](https://github.com/allenai/swig)|[paper](https://arxiv.org/abs/2003.12058)
-- **Grounded Situation Recognition with Transformers** [code](https://github.com/jhcho99/gsrtr)|[paper](https://arxiv.org/abs/2111.10135)
-- **Collaborative Transformers for Grounded Situation Recognition** [code](https://github.com/jhcho99/CoFormer)|[paper](https://arxiv.org/abs/2203.16518)
+- **Grounded Situation Recognition**  [code](https://github.com/allenai/swig) | [paper](https://arxiv.org/abs/2003.12058)
+- **Grounded Situation Recognition with Transformers**  [code](https://github.com/jhcho99/gsrtr) | [paper](https://arxiv.org/abs/2111.10135)
+- **Collaborative Transformers for Grounded Situation Recognition**  [code](https://github.com/jhcho99/CoFormer) | [paper](https://arxiv.org/abs/2203.16518)
 
 ### Section 5.3
 The experiments in this section can be run with the command `python tools/train_uq.py`. As with the script for Section 5.1, there is a set of paths at the top of the script that must be filled in. Again, to select specific model calibration techniques to evaluate, the list of methods at the bottom of the script can be modified.
