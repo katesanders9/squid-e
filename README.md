@@ -1,4 +1,4 @@
-# DUNES
+# DUNES 🏜
 ![alt text](https://www.cs.jhu.edu/~ksanders/dai_title_im.png)
 
 This repository contains code and data for DUNES (Dataset of UNcertain Event Scenes), a collection of 12,000 event-based ambiguous images extracted from videos. All images are annotated with ground truth values and a test set is annotated with 10,800 human uncertainty judgments. The dataset is detailed in the paper **Ambiguous Images With Human Judgments for Robust Visual Event Classification** ([PDF linked here](https://openreview.net/forum?id=6Hl7XoPNAVX)). In the paper, it is illustrated how DUNES can be used to explore human uncertainty quantification, train robust models, and directly evaluate models and model calibration techniques. The repository includes dataset information, a dataset loader, and code used for experiments in the paper.
