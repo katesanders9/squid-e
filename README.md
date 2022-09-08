@@ -1,6 +1,6 @@
 # 🏜️DUNES
 
-This repository contains code and data for DUNES (Dataset of UNcertain Event Scenes), a collection of 12,000 event-based ambiguous images extracted from videos. All images are annotated with ground truth values and a test set is annotated with 10,800 human uncertainty judgments. The dataset is detailed in the paper **Ambiguous Images With Human Judgments for Robust Visual Event Classification** ([PDF linked here](https://openreview.net/forum?id=6Hl7XoPNAVX)). In the paper, it is illustrated how DUNES can be used to explore human uncertainty quantification, train robust models, and directly evaluate models and model calibration techniques. The repository includes dataset information, a dataset loader, and code used for experiments in the paper.
+This repository contains code and data for DUNES (Dataset of UNcertain Event Scenes), a collection of 12,000 event-based ambiguous images extracted from videos. All images are annotated with ground truth values and a test set is annotated with 10,800 human uncertainty judgments. The dataset is detailed in the paper **Ambiguous Images With Human Judgments for Robust Visual Event Classification** ([PDF here](https://openreview.net/forum?id=6Hl7XoPNAVX)). The paper illustrates how DUNES can be used to explore human uncertainty quantification, train robust models, and directly evaluate models and model calibration techniques. The repository includes dataset information, a dataset loader, and code used for experiments in the paper.
 
 ![Title Image](title-im.png?raw=true)
 
@@ -8,8 +8,9 @@ This repository contains code and data for DUNES (Dataset of UNcertain Event Sce
 ### Code Directory
 ```
 dunes
-│   README.md    # Repository documentation
-|   setup.py     # Script to install repository code
+|   title-im.png   # Title page figure
+│   README.md      # Repository documentation
+|   setup.py       # Script to install repository code
 │   
 └───dataset
 │   │   
@@ -46,7 +47,29 @@ It is recommended that you set up a virtual environment for installation. All co
 Run `python setup.py develop` to install the required packages and DUNES code.
 
 ## Dataset
+### Dataset statistics
+- 12,000 images
+- 20 distinct event types
+- 2,000 online videos used
+- 1,800 human-labeled test set images
+- 6 test set event types
+- 10,800 test set human uncertainty judgments
 
+### Event types
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Baseball  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Basketball   |Birthday Parties   |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cooking   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|COVID Tests   |
+|:---:|:---:|:---:|:---:|:---:|
+|__Cricket__   |__Fires__   |__Fishing__   |__Gardening__   |__Graduation Ceremonies__   |
+|__Hiking__   |__Hurricanes__   |__Medical Procedures__   |__Music Concerts__   |__Parades__   |
+|__Protests__ |__Soccer/Football__   |__Tennis__   |__Tsunamis__   |__Weddings__   |
+
+Event types included in the human-annotated test set are *Birthday Parties*, *COVID Tests*, *Medical Procedures*, *Parades*, *Protests*, and *Weddings*.
+
+### Details
+Our dataset explicitly consists of two parts: (1) Necessary information for downloading and extracting the images used for the dataset and (2) grount truth and human judgment annotations for each image. Each image is identified by a video ID and a frame number, since we do not own or have legal rights to the images/videos used for this dataset and cannot distribute them directly. We provide the URLs for all the videos, frame numbers corresponding to the images extracted from each video (both located in the `dataset/data/dataset.csv` file), and scripts to download these videos from the URLs and extract the appropriate frames (located in `data/data_scripts`).
+
+The human judgment annotations (located in `dataset/data/huj_annotations.csv`) consist of the video ID and frame number, event prompt given to annotators, and three integer values within [0,100] measuring an individual annotators' confidence that the image depicts the event type prompt. All images in the test set have at least 3 annotation scores where the event prompt is the image's ground truth event type.
+
+A datasheet following the format introduced by [Gebru et al.](https://arxiv.org/abs/1803.09010) is included (`dataset/data/datasheet.pdf`) that covers information regarding dataset motivation, collection, and intended use. **We also encourage researchers to review the limitations and ethical considerations regarding this dataset discussed in [Section 6 of the paper](https://openreview.net/forum?id=6Hl7XoPNAVX).**
 
 ## Experiments
 ### Section 5.1
