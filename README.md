@@ -56,7 +56,7 @@ Run `python setup.py develop` to install the required packages and DUNES code.
 - 10,800 test set human uncertainty judgments
 
 ### Event types
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Baseball  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Basketball   |Birthday Parties   |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cooking   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|COVID Tests   |
+|Baseball  |Basketball   |Birthday Parties   |Cooking   |COVID Tests   |
 |:---:|:---:|:---:|:---:|:---:|
 |__Cricket__   |__Fires__   |__Fishing__   |__Gardening__   |__Graduation Ceremonies__   |
 |__Hiking__   |__Hurricanes__   |__Medical Procedures__   |__Music Concerts__   |__Parades__   |
