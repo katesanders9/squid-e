@@ -1,12 +1,12 @@
-# Dataset of Ambiguous Images
+# DUNES
 ![alt text](https://www.cs.jhu.edu/~ksanders/dai_title_im.png)
 
-This repository contains the Dataset of Ambiguous Images (DAI), a collection of 12,000 event-based ambiguous images extracted from videos. All images are annotated with ground truth values and a test set is annotated with 10,800 human uncertainty judgments. The dataset is detailed in the paper **Ambiguous Images With Human Judgments for Robust Visual Event Classification** ([PDF linked here](https://openreview.net/forum?id=6Hl7XoPNAVX)). In the paper, it is illustrated how DAI can be used to explore human uncertainty quantification, train robust models, and directly evaluate models and model calibration techniques. The repository includes dataset information, a dataset loader, and code used for experiments in the paper.
+This repository contains code and data for DUNES (Dataset of UNcertain Event Scenes), a collection of 12,000 event-based ambiguous images extracted from videos. All images are annotated with ground truth values and a test set is annotated with 10,800 human uncertainty judgments. The dataset is detailed in the paper **Ambiguous Images With Human Judgments for Robust Visual Event Classification** ([PDF linked here](https://openreview.net/forum?id=6Hl7XoPNAVX)). In the paper, it is illustrated how DUNES can be used to explore human uncertainty quantification, train robust models, and directly evaluate models and model calibration techniques. The repository includes dataset information, a dataset loader, and code used for experiments in the paper.
 
 ## Overview
 ### Code Directory
 ```
-dai
+dunes
 │   README.md    # Repository documentation
 |   setup.py     # Script to install repository code
 │   
@@ -19,8 +19,8 @@ dai
 |   |
 |   └───data_scripts
 |       |   extract_images.py      # Script to extract dataset images from downloaded videos
-|       |   load_yt.py             # Script to download YouTube videos used in DAI
-|       |   load_ucf.sh            # Script to download UCF videos used in DAI
+|       |   load_yt.py             # Script to download YouTube videos used in DUNES
+|       |   load_ucf.sh            # Script to download UCF videos used in DUNES
 |       |   requirements.txt       # Requirements needed for running data scripts (included in setup.py)
 │
 └───experiments
@@ -42,7 +42,7 @@ dai
 
 It is recommended that you set up a virtual environment for installation. All code was run using Python 3.7.11. 
 
-Run `python setup.py develop` to install the required packages and DAI code.
+Run `python setup.py develop` to install the required packages and DUNES code.
 
 ## Dataset
 
