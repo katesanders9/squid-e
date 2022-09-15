@@ -1,13 +1,13 @@
-# 🏜️DUNES
+# 🦑EventSQUID
 
-This repository contains code and data for DUNES (Dataset of UNcertain Event Scenes), a collection of 12,000 event-based ambiguous images extracted from videos. All images are annotated with ground truth values and a test set is annotated with 10,800 human uncertainty judgments. The dataset is detailed in the paper **Ambiguous Images With Human Judgments for Robust Visual Event Classification** ([PDF here](https://openreview.net/forum?id=6Hl7XoPNAVX)). The paper illustrates how DUNES can be used to explore human uncertainty quantification, train robust models, and directly evaluate models and model calibration techniques. The repository includes dataset information, a dataset loader, and code used for experiments in the paper.
+This repository contains code and data for EventSQUID (Event Scenes with Quantitative Uncertainty Information Dataset), a collection of 12,000 event-based ambiguous images extracted from videos. All images are annotated with ground truth values and a test set is annotated with 10,800 human uncertainty judgments. The dataset is detailed in the paper **Ambiguous Images With Human Judgments for Robust Visual Event Classification** ([PDF here](https://openreview.net/forum?id=6Hl7XoPNAVX)). The paper illustrates how EventSQUID can be used to explore human uncertainty quantification, train robust models, and directly evaluate models and model calibration techniques. The repository includes dataset information, a dataset loader, and code used for experiments in the paper.
 
 ![Title Image](title-im.png?raw=true)
 
 ## Overview
 ### Code Directory
 ```
-dunes
+eventsquid
 |   title-im.png   # Title page figure
 │   README.md      # Repository documentation
 |   setup.py       # Script to install repository code
@@ -44,7 +44,7 @@ dunes
 
 It is recommended that you set up a virtual environment for installation. All code was run using Python 3.7.11. 
 
-Run `python setup.py develop` to install the required packages and DUNES code.
+Run `python setup.py develop` to install the required packages and EventSQUID code.
 
 ## Dataset
 ### Dataset statistics
