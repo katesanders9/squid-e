@@ -21,8 +21,8 @@ squid-e
 |   |
 |   └───data_scripts
 |       |   extract_images.py      # Script to extract dataset images from downloaded videos
-|       |   load_yt.py             # Script to download YouTube videos used in DUNES
-|       |   load_ucf.sh            # Script to download UCF videos used in DUNES
+|       |   load_yt.py             # Script to download YouTube videos used in SQUID-E
+|       |   load_ucf.sh            # Script to download UCF videos used in SQUID-E
 |       |   requirements.txt       # Requirements needed for running data scripts (included in setup.py)
 │
 └───experiments
