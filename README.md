@@ -99,6 +99,8 @@ If you find this dataset or code useful in your research, please consider citing
 ```
 @article{sandersambiguous,
   title={Ambiguous Images With Human Judgments for Robust Visual Event Classification},
-  author={Sanders, Kate and Kriz, Reno and Liu, Anqi and Van Durme, Benjamin}
+  author={Sanders, Kate and Kriz, Reno and Liu, Anqi and Van Durme, Benjamin},
+  journal={Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year={2022}
 }
 ```
