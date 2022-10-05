@@ -97,10 +97,12 @@ Our code builds on the following research repositories:
 ## Citation
 If you find this dataset or code useful in your research, please consider citing the paper:
 ```
-@article{sandersambiguous,
-  title={Ambiguous Images With Human Judgments for Robust Visual Event Classification},
-  author={Sanders, Kate and Kriz, Reno and Liu, Anqi and Van Durme, Benjamin},
-  journal={Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
-  year={2022}
+@inproceedings{
+    sanders2022ambiguous,
+    title={Ambiguous Images With Human Judgments for Robust Visual Event Classification},
+    author={Kate Sanders and Reno Kriz and Anqi Liu and Benjamin Van Durme},
+    booktitle={Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+    year={2022},
+    url={https://openreview.net/forum?id=6Hl7XoPNAVX}
 }
 ```
